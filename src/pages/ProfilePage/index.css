@@ -1,0 +1,223 @@
+/* .profile {
+    background-image: linear-gradient(to bottom, #276ab8, #c049d3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.profile_details {
+    list-style-type: none;
+    background-color: #2bc28b;
+    display: flex;   
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 24px;
+    padding: 12px;
+    border: 0.5px solid #9dda0d;
+    height: 70px;
+    width: 100%;
+    border-radius: 10px;
+
+
+
+}
+
+.list-item {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 600;
+    line-height: 56px;
+
+
+}
+
+.nav-container {
+    min-height: 100vh;
+    background-color: transparent;
+    padding: 20px;
+    width: 20%;
+    margin-top: 0px;
+    margin-right: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0cqb;
+    backdrop-filter: bluer(5.5px);
+    border:1px soli #f0e6e6;
+    transition: background-color 0.1s, box-shadow 0.1s, backdrop-filter 0.1s, -webkit-backdrop-filter 0.1s, border 0.1s, cursor 0.1s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5.5px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 16px;
+}
+
+.dashbord-btn {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 56px;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.dataanalytics-btn {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 56px;
+    font-size: 24px;
+}
+
+
+.selected-btn{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 12px;
+    padding: 0 12px;
+    transition: background-color 0.1s, color 0.1s;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile {
+    /* background-image: linear-gradient(to bottom, #276ab8, #c049d3); */
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.nav-container {
+    min-height: 100vh;
+    background-color: transparent;
+    padding: 20px;
+    width: 20%;
+    margin-top: 0px;
+    margin-right: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0cqb;
+    backdrop-filter: bluer(5.5px);
+    border:1px soli #131111;
+    transition: background-color 0.1s, box-shadow 0.1s, backdrop-filter 0.1s, -webkit-backdrop-filter 0.1s, border 0.1s, cursor 0.1s;
+    cursor: pointer;
+    background-color: rgba(204, 202, 216, 0.3);
+    backdrop-filter: blur(5.5px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 16px;
+}
+
+.dashbord-btn,
+.dataanalytics-btn {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    color: #120f0f;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 56px;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.selected-btn {
+    background-color: #7325d1;
+    color: #000000;
+    border-radius: 12px;
+    padding: 0 12px;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+
+.profile_table {
+    width: 30%;
+    height: 600px; /* Adjust the height as needed */
+    border-radius: 10px; /* Adds rounded corners */
+    overflow-y: auto; /* Adds a vertical scrollbar if content overflows */
+    margin: 50px;
+}
+
+
+table {
+    border-collapse: collapse;
+    
+    
+}
+
+th{
+    border: 3px solid #e34b4b;
+    text-align: center;
+    color: #fbf7f7;
+    padding: 14px; /* Adjust the padding */
+    font-size: 18px; /* Adjust the font size */
+    width: 30%;
+    height: 40px;
+    border: none;  
+    border-bottom: 0.1px solid #dddddd; 
+}
+
+
+
+td {
+    border: 3px solid #e34b4b;
+    text-align: center;
+    color: #0a0606;
+    padding: 14px; /* Adjust the padding */
+    font-size: 18px; /* Adjust the font size */
+    width: 30%;
+    height: 40px;
+    border: none;  
+    border-bottom: 0.5px solid #dddddd; 
+}
+
+
+
+
+th {
+    background-color: #0c0b0b;
+    
+}
+
+tr:hover {
+    background-color: #EDEDED; /* Change to the color you want on hover */
+  }
+
+
+  
+
