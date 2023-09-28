@@ -99,12 +99,16 @@
 
 
 
+/* This is for Table container if we remove this sidebar will not show the buttons with full name */
+
+.profile_table_container {
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+    overflow-x: auto; /* Add horizontal scroll if necessary */
+}
 
 
-
-
-
-
+/* This is for table beside the sidebar profile */
 
 .profile {
     /* background-image: linear-gradient(to bottom, #276ab8, #c049d3); */
@@ -115,12 +119,13 @@
 }
 
 
+/*  This is for nav side bar */
 
 .nav-container {
     min-height: 100vh;
     background-color: transparent;
     padding: 20px;
-    width: 20%;
+    width: 25%;
     margin-top: 0px;
     margin-right: 24px;
     border-radius: 12px;
@@ -133,55 +138,123 @@
     border:1px soli #131111;
     transition: background-color 0.1s, box-shadow 0.1s, backdrop-filter 0.1s, -webkit-backdrop-filter 0.1s, border 0.1s, cursor 0.1s;
     cursor: pointer;
-    background-color: rgba(204, 202, 216, 0.3);
+    background-color: #131111;
     backdrop-filter: blur(5.5px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+    overflow: hidden;
+    max-width: 70px; /* Adjust this value as needed */
+    transition: max-width 0.3s;
 }
 
+.nav-container.nav-open {
+    max-width: 250px; /* Adjust this value as needed */
+  }
+
+
+
+
+/* This is for logo */
+
 .logo {
-    width: 80px;
-    margin-bottom: 16px;
+    width: 60px;
+    transition: width 0.3s;
 }
+
+.nav-container:hover .logo {
+    width: 100px; /* Adjust the width for open nav */
+}
+
+.nav-container:not(:hover) .logo {
+    width: 60px; /* Adjust the width for closed nav */
+}
+
+
+/* This is for Buttons like dashboard and dataAnalytics */
 
 .dashbord-btn,
 .dataanalytics-btn {
     align-self: flex-start;
     background-color: transparent;
     border: none;
-    color: #120f0f;
+    color: #fff7f7;
     font-family: "Roboto";
     font-weight: 700;
     line-height: 56px;
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 20px;
+    margin-bottom: 2px;
+    margin-top: 25px;
+    vertical-align: left;
+    height: 60px; 
+    width: 200px;
+    text-align: left;
+
 }
 
 .selected-btn {
-    background-color: #7325d1;
-    color: #000000;
+    background-color: #f6f0f0;
+    color: #080808;
     border-radius: 12px;
+    border: 1px solid #e9e6ec;
     padding: 0 12px;
+    box-shadow: inset 0 0 0 1px #ffffff;
     transition: background-color 0.1s, color 0.1s;
 }
 
 
-.profile_table {
-    width: 30%;
-    height: 600px; /* Adjust the height as needed */
-    border-radius: 10px; /* Adds rounded corners */
-    overflow-y: auto; /* Adds a vertical scrollbar if content overflows */
-    margin: 50px;
+
+/* This is for button icons  */
+
+.button-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; 
+    color: #0a0606;
+    /* margin-right: 5px; */
+
+  }
+  
+.button-icon-image {
+    vertical-align: middle;
+    width: auto; 
+    height: auto;
+    /* color: #ffffff;  */
+    margin-right: 10px;
+  }
+
+
+
+/* This is for icon becomes white when the profile open */
+
+.white-icons .button-icon-image {
+    color: #ffffff; /* Set the color to white */
+}  
+
+.nav-container.nav-closed .white-icons .button-icon-image {
+    color: #ffffff; /* Set the color to white when nav is closed */
 }
 
+
+
+/* This is for Table size changed like width */
+
+.profile_table {
+    width: 20%;
+    height: 200px; 
+    border-radius: 10px; 
+    overflow-y: auto; 
+    margin: 60px;
+}
 
 table {
     border-collapse: collapse;
-    
-    
 }
 
+
+/* This is for table head */
+
 th{
-    border: 3px solid #e34b4b;
+
     text-align: center;
     color: #fbf7f7;
     padding: 14px; /* Adjust the padding */
@@ -190,34 +263,50 @@ th{
     height: 40px;
     border: none;  
     border-bottom: 0.1px solid #dddddd; 
+    border-radius: 5px;
+    background-color: #0c0b0b;
 }
 
 
+/*  This is for table data  */
 
 td {
-    border: 3px solid #e34b4b;
+
     text-align: center;
     color: #0a0606;
     padding: 14px; /* Adjust the padding */
     font-size: 18px; /* Adjust the font size */
     width: 30%;
     height: 40px;
+    cursor: pointer;
     border: none;  
     border-bottom: 0.5px solid #dddddd; 
 }
 
 
-
-
-th {
-    background-color: #0c0b0b;
-    
-}
+/* This is for if the cursor place on the data it will highlight */
 
 tr:hover {
-    background-color: #EDEDED; /* Change to the color you want on hover */
+    background-color: #EDEDED; 
   }
 
 
-  
+/* This is for actions  */
+
+.actions-cell {
+  text-align: center;
+}
+
+.ellipsis-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 2px;
+}
 
