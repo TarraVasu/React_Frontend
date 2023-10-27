@@ -7,46 +7,75 @@
     display: flex;
     font-weight: 400;
     font-family: "Fira Sans", sans-serif;
+   
+}
+
+
+.login_image {
+  width: 50%;
+  height: 80%;
+}
+
+
+.corner-image {
+  margin-bottom: 40%;
+  
+}
+
+.mb-3 {
+  padding: 5px;  
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+
+.logintext{
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 
 .log-container {
-    max-width: 400px;
+    height: 80%;
+    width: 40%;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    background-color: #5066cb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(221, 221, 253, 0.1);
+    border: 2px solid #f7f2f2;
+  
   }
   
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
+
   
-  .form-label {
-    font-weight: bold;
-    color: #333333;
-  }
-  
-  .form-control {
+  .textbox {
     width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #dddddd;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-bottom: 10px;
+    height: 40px;
+    margin-left:10px;
   }
   
-  .btn-primary {
-    width: 100%;
+  .loginbut {
+    width: 70%;
     padding: 10px;
+    margin-top: 30px;
+    margin-left: 90px;
     font-size: 16px;
     background-color: #2080e1;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    
   }
   
   .btn-primary:hover {
@@ -60,20 +89,63 @@
   
   .sign-up-link {
     font-weight: bold;
-    color: #007bff; /* Blue color, you can choose any other color you prefer */
-    text-decoration: underline;
+    margin: 10px;
+    display: inline-block; 
+    padding: 6px 16px; /* Adjust padding as needed */
+    border: 2px solid #007bff; 
+    border-radius: 20px;
+    text-decoration: none;
+    
   }
   
   
+.account-text {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+  
+  
+.forgotbutt {
+  margin-left: 60%;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 1px;
+  display: inline-block;
+ }  
   
   
   
+.contact-us {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-us-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
   
   
-  
-  
-  
-  
-  
-  
-  
+
+.separator {
+  text-align: center;
+  margin: 40px 70px
+}
+
+.separator-line {
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  background-color: #b9b0b0; /* You can change the color by replacing #000 with your desired color */
+}
+
+.separator-text {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: bold; /* Optional: You can make the text bold if needed */
+}
+

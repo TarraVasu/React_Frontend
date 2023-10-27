@@ -25,7 +25,7 @@ const SignUpPage = () => {
         try {
             // Replace this URL with your actual API endpoint for user registration
             // const response = await axios.post('http://127.0.0.1:8000/Loginpage/Registration/', {    this the local server
-            const response = await axios.post('http://172.105.37.251:8000/Registration/Registration/', {
+            const response = await axios.post('http://172.105.37.251:8000/POC_Registration/register/', {
                 fullName,
                 email_id,
                 Password,
@@ -40,7 +40,7 @@ const SignUpPage = () => {
                 console.log('Email already exists');
                 // Display "Email is already exists" message
                 setSignUpDetails({ ...signUpDetails, message: 'Email is already exists. Please use a different email.' });
-            } else if (response.data.message === "Success") {
+            } else if (response.data.Message === "Successfull") {
                 console.log('Registration Successful');
                 // Clear input fields after successful registration
                 setSignUpDetails({

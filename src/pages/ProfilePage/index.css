@@ -1,127 +1,11 @@
-/* .profile {
-    background-image: linear-gradient(to bottom, #276ab8, #c049d3);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    
-}
+/*  CSS Code */
 
-
-.profile_details {
-    list-style-type: none;
-    background-color: #2bc28b;
-    display: flex;   
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 24px;
-    padding: 12px;
-    border: 0.5px solid #9dda0d;
-    height: 70px;
-    width: 100%;
-    border-radius: 10px;
-
-
-
-}
-
-.list-item {
-    color: #ffffff;
-    font-family: "Roboto";
-    font-weight: 600;
-    line-height: 56px;
-
-
-}
-
-.nav-container {
-    min-height: 100vh;
-    background-color: transparent;
-    padding: 20px;
-    width: 20%;
-    margin-top: 0px;
-    margin-right: 24px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0cqb;
-    backdrop-filter: bluer(5.5px);
-    border:1px soli #f0e6e6;
-    transition: background-color 0.1s, box-shadow 0.1s, backdrop-filter 0.1s, -webkit-backdrop-filter 0.1s, border 0.1s, cursor 0.1s;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5.5px);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-}
-
-.logo {
-    width: 80px;
-    margin-bottom: 16px;
-}
-
-.dashbord-btn {
-    align-self: flex-start;
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    font-family: "Roboto";
-    font-weight: 700;
-    line-height: 56px;
-    font-size: 24px;
-    margin-bottom: 12px;
-}
-
-.dataanalytics-btn {
-    align-self: flex-start;
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    font-family: "Roboto";
-    font-weight: 700;
-    line-height: 56px;
-    font-size: 24px;
-}
-
-
-.selected-btn{
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 12px;
-    padding: 0 12px;
-    transition: background-color 0.1s, color 0.1s;
-} */
-
-
-
-
-
-
-
-
-/* This is for Table container if we remove this sidebar will not show the buttons with full name */
-
-.profile_table_container {
-    width: 100%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the container */
-    overflow-x: auto; /* Add horizontal scroll if necessary */
-}
-
-
-/* This is for table beside the sidebar profile */
-
-.profile {
-    /* background-image: linear-gradient(to bottom, #276ab8, #c049d3); */
-    background-color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-}
 
 
 /*  This is for nav side bar */
 
 .nav-container {
+    position: fixed;     
     min-height: 100vh;
     background-color: transparent;
     padding: 20px;
@@ -138,10 +22,12 @@
     border:1px soli #131111;
     transition: background-color 0.1s, box-shadow 0.1s, backdrop-filter 0.1s, -webkit-backdrop-filter 0.1s, border 0.1s, cursor 0.1s;
     cursor: pointer;
-    background-color: #131111;
+    background-color: #f4f4f4;
     backdrop-filter: blur(5.5px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
+
+    /* This is for nav min amd max */
     overflow: hidden;
     max-width: 70px; /* Adjust this value as needed */
     transition: max-width 0.3s;
@@ -150,8 +36,6 @@
 .nav-container.nav-open {
     max-width: 250px; /* Adjust this value as needed */
   }
-
-
 
 
 /* This is for logo */
@@ -177,7 +61,7 @@
     align-self: flex-start;
     background-color: transparent;
     border: none;
-    color: #fff7f7;
+    color: #6B93FF;
     font-family: "Roboto";
     font-weight: 700;
     line-height: 56px;
@@ -192,12 +76,12 @@
 }
 
 .selected-btn {
-    background-color: #f6f0f0;
+    background-color: #CAD8FF;
     color: #080808;
     border-radius: 12px;
-    border: 1px solid #e9e6ec;
+    /* border: 1px solid #e9e6ec; */
     padding: 0 12px;
-    box-shadow: inset 0 0 0 1px #ffffff;
+    /* box-shadow: inset 0 0 0 1px #0d0b0b; */
     transition: background-color 0.1s, color 0.1s;
 }
 
@@ -218,7 +102,7 @@
     vertical-align: middle;
     width: auto; 
     height: auto;
-    /* color: #ffffff;  */
+    color: #6B93FF; 
     margin-right: 10px;
   }
 
@@ -227,24 +111,63 @@
 /* This is for icon becomes white when the profile open */
 
 .white-icons .button-icon-image {
-    color: #ffffff; /* Set the color to white */
+    color: #0f0e0e; /* Set the color to white */
 }  
 
 .nav-container.nav-closed .white-icons .button-icon-image {
-    color: #ffffff; /* Set the color to white when nav is closed */
+    color: #0f0b0b; /* Set the color to white when nav is closed */
 }
 
+
+
+/* This is for moving the profile container to right when we place the cursor on the nav */
+
+/* .profile_table_container.nav-open {
+    transform: translateX(200px);
+    transition: transform 0.3s; 
+  } */
+
+
+/* This is for Table container if we remove this sidebar will not show the buttons with full name */
+
+.profile_table_container {
+    width: 100%; 
+    height: 100%;
+    padding-top: 140px;
+    margin: 0 auto; 
+    margin-left: 80px;
+    transition: transform 0.3s;
+    overflow-y: auto; 
+    overflow-x: auto;
+}
+
+
+/* This is for table beside the sidebar profile */
+
+.profile {
+    /* background-image: linear-gradient(to bottom, #276ab8, #c049d3); */
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
 
 
 /* This is for Table size changed like width */
 
 .profile_table {
-    width: 20%;
+    width: 90%;
     height: 200px; 
     border-radius: 10px; 
     overflow-y: auto; 
     margin: 60px;
+    table-layout: absolute; 
+    margin-top: 10px;
+    /* transform: scale(0.9); 
+    transform-origin: 0 0; */
 }
+
 
 table {
     border-collapse: collapse;
@@ -256,16 +179,19 @@ table {
 th{
 
     text-align: center;
-    color: #fbf7f7;
-    padding: 14px; /* Adjust the padding */
+    color: #120d0d;
+    padding: 10px 20px; /* Adjust the padding */
     font-size: 18px; /* Adjust the font size */
-    width: 30%;
+    /* width: 20%; */
+    width: 150px;
     height: 40px;
     border: none;  
     border-bottom: 0.1px solid #dddddd; 
-    border-radius: 5px;
-    background-color: #0c0b0b;
+    border-radius: 1px;
+    background-color: #CAD8FF;
+    
 }
+
 
 
 /*  This is for table data  */
@@ -274,13 +200,14 @@ td {
 
     text-align: center;
     color: #0a0606;
-    padding: 14px; /* Adjust the padding */
+    padding: 14px 15px; /* Adjust the padding */
     font-size: 18px; /* Adjust the font size */
     width: 30%;
     height: 40px;
     cursor: pointer;
     border: none;  
     border-bottom: 0.5px solid #dddddd; 
+    font-style: verdana;
 }
 
 
@@ -291,37 +218,10 @@ tr:hover {
   }
 
 
-/* This is for actions  */
 
-
-
-.ellipsis-menu {
-    position: relative;
-    cursor: pointer;
+  .icon {
+    color: #575757;
   }
-  
-  .dot {
-    width: 6px;
-    height: 6px;
-    background-color: #000;
-    border-radius: 50%;
-    margin: 2px;
-  }
-  
-
-  .ellipsis-menu.clicked::before,
-  .ellipsis-menu:hover::before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: -20px;
-    width: 50px; /* Adjust the width and height to cover the dots */
-    height: 50px;
-    background-color: #b7b2b2;
-    border-radius: 50%;
-    opacity: 0.5;
-  }
-
 
 /* This is for view and edit buttons of actions */
 
@@ -331,8 +231,8 @@ tr:hover {
   
 .action-buttons {
     position: absolute;
-    top: 50%;
-    left: 15px;
+    top: -20%;
+    left: 110px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -347,8 +247,8 @@ tr:hover {
     background-color: #ffffff;
     /* border: none; */
     color: #171616;
-    padding: 8px 16px;
-    margin: 4px 0;
+    padding: 4px 10px;
+    margin: 2px 0;
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -369,16 +269,111 @@ tr:hover {
 
 
 
-/*  This is for view button */
+/* This is for after upload message  */
+  
+  .uploading-message,
+  .success-message,
+  .error-message {
+    font-size: 14px;
+    color: #007bff;
+    margin-left: 80%;
+    font-weight: bold;
+  }
+
+  
+
+/* This is for upload button */
+
+  .upload-container {
+    position: absolute;
+    right: 10px; 
+    top: 80px; 
+    text-align: center;
+    margin-left: 10px;
+    /* padding: 5px;
+    font-size: 16px;
+    margin-left: 80%;
+    margin-top: -80px; */
+  
+  }
+  
+  
+
+  .file-upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #6B93FF;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* .file-upload-label:hover {
+    background-color: #4df038;
+  } */
+  
+  
+  #file-input {
+    display: none;
+  }
+  
+
+  .upload-icon {
+    margin-right: 2px;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 1;
+  }
+  
+
+/* This is for datanalytics name */
+
+.Dataanalystics {
+  font-size: 30px;
+  margin-left: 60px;
+  font-weight: bold;
+  margin-top: -70px;
+  
+}
 
 
+/* This is for search icon */
+
+.search-icon {
+  color: #171413;
+  font-size: 150% !important;
+  vertical-align: -14px;
+  margin-left: 10px;
+  border: 1px solid #e7dedb;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2);
+}
 
 
-.pdf-viewer-overlay {
+.search-bar {
+  width: 20%;
+  border-radius: 10px;
+  height: 30px;
+  vertical-align: 3px;
+  margin-left: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2);
+
+}
+  
+
+
+/* This is for both the view and edit buttons */
+
+  
+  /* This is for view button */
+  .pdf-viewer-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -386,10 +381,10 @@ tr:hover {
     align-items: center;
   }
   
-.pdf-viewer {
+  .pdf-viewer {
     background-color: #fff;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     overflow: auto;
     position: relative;
     border: 1px solid #ccc;
@@ -397,8 +392,7 @@ tr:hover {
     border-radius: 8px;
   }
   
-
-.pdf-viewer-header {
+  .pdf-viewer-header {
     background-color: #f0f0f0;
     padding: 10px;
     display: flex;
@@ -408,24 +402,229 @@ tr:hover {
     top: 0;
   }
   
-
-.pdf-viewer-close {
+  .pdf-viewer-close {
     cursor: pointer;
     font-size: 20px;
   }
   
-
-.pdf-viewer iframe {
+  .pdf-viewer iframe {
     width: 100%;
     height: 100%;
     border: none;
   }
+  
+  /* This is for edit button */
+  .details-view-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .details-view {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .details-view-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+  }
+  
+  .details-view-close {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .details-view-content {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+  }
+  
+  .field {
+    margin-bottom: 20px;
+  }
+  
+ 
+
+
+/* This is for after uploading document it will pop-up like sucess */
+
+.upload-status-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.upload-status {
+  background-color: #e1e7ec;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.uploading-message, .success-message, .error-message {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+
+
+/* This is for save button in edit */
+
+.success-message {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.success-message-viewer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+
+.save_button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
 
 
+input{
+  border-radius: 5px;
+  margin-left: 79px;
+  width: 90%;
+  height: 29px;
+  font-family: sans-serif;
+  font-size: 17px;
+
+}
 
 
+
+/* This is for pagination */
+
+
+.pagination-controls {
+  position: absolute;
+  top: 300px; 
+  left: 93%;
+  transform: translateX(-50%);
+  text-align: center;
+
+}
+
+
+.upload-container .pagination-controls {
+  margin-top: 80px;
+}
+
+.pagination-controls span {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 18px;
+  color: black;
+}
+
+.pagination-controls span:hover {
+  text-decoration: underline;
+}
+
+.pagination-controls .current-page {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* This is the code for dropdown for sort by */
+
+.sort_dropdown {
+  position: absolute;
+  padding: 8px 20px; 
+  font-size: 16px;
+  margin-left: 85%;
+  margin-top: 50px;
+  border: 2px solid #070606; /* Add border */
+  border-radius: 6px; 
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(208, 10, 10, 0.1);
+  z-index: 1000; 
+}
+
+
+/* This is Summary text above the table */
+
+.summary {
+  font-weight: bold;
+  margin-left: 70px;
+  margin-top: -25px;
+  font-size: 22px;
+  
+}
+
+/* This is showing results text above the table */
+
+.showing-results {
+  /* font-weight: bold; */
+  margin-left: 18%;
+  margin-top: 180px;
+  font-size: 18px; 
+}
+
+
+
+/* This is for logout  */
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
 
 

@@ -1,1 +1,2 @@
-# React_Frontend
+# poc-ocr-telstra-frontend
+poc-ocr-telstra-frontend (React)
